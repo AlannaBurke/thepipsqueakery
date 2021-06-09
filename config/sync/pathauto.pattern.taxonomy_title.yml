@@ -1,0 +1,25 @@
+uuid: 6cfda220-43ac-4833-8d9f-6d53fcc20a06
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: taxonomy_title
+label: 'Taxonomy Title'
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:name]'
+selection_criteria:
+  844d4a26-b568-4fc8-886f-48b1c8bffcf1:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      animal_types: animal_types
+      chapters: chapters
+      tags: tags
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 844d4a26-b568-4fc8-886f-48b1c8bffcf1
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -4,11 +4,16 @@ status: true
 dependencies:
   config:
     - field.field.node.contact_info.body
+    - field.field.node.contact_info.field_address
     - field.field.node.contact_info.field_chapter
+    - field.field.node.contact_info.field_email
     - field.field.node.contact_info.field_link
+    - field.field.node.contact_info.field_phone
     - node.type.contact_info
   module:
+    - address
     - link
+    - telephone
     - text
     - user
 id: node.contact_info.default
@@ -23,17 +28,31 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_address:
+    weight: 104
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
   field_chapter:
     weight: 102
-    label: above
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
+  field_email:
+    weight: 105
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
   field_link:
     weight: 103
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -43,9 +62,18 @@ content:
     third_party_settings: {  }
     type: link
     region: content
+  field_phone:
+    weight: 106
+    label: hidden
+    settings:
+      title: ''
+    third_party_settings: {  }
+    type: telephone_link
+    region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
-hidden: {  }
+hidden:
+  search_api_excerpt: true

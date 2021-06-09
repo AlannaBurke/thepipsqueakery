@@ -1,0 +1,8 @@
+uuid: 2d9f3959-b132-491b-9953-aee963a73a00
+langcode: en
+status: true
+dependencies: {  }
+name: 'Resource Type'
+vid: resource_type
+description: 'The type of resource - store, vet, animal care, etc'
+weight: 0

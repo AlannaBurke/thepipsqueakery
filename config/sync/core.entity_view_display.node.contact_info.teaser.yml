@@ -5,8 +5,11 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.contact_info.body
+    - field.field.node.contact_info.field_address
     - field.field.node.contact_info.field_chapter
+    - field.field.node.contact_info.field_email
     - field.field.node.contact_info.field_link
+    - field.field.node.contact_info.field_phone
     - node.type.contact_info
   module:
     - text
@@ -30,5 +33,9 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_address: true
   field_chapter: true
+  field_email: true
   field_link: true
+  field_phone: true
+  search_api_excerpt: true

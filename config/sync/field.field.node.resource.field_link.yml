@@ -1,20 +1,20 @@
-uuid: 397d5480-2cd8-4976-b88b-fc33b7c89419
+uuid: 6e7807ad-e805-4555-b75a-5afdbf1be1ef
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_link
-    - node.type.contact_info
+    - node.type.resource
   module:
     - link
-id: node.contact_info.field_link
+id: node.resource.field_link
 field_name: field_link
 entity_type: node
-bundle: contact_info
+bundle: resource
 label: Link
-description: 'Add contact links. '
+description: 'The link to the resource.'
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

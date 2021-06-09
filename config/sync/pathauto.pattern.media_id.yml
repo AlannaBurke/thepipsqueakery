@@ -1,0 +1,27 @@
+uuid: 747f0d39-1662-4fbc-82c0-8d9388a2e456
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - media
+id: media_id
+label: 'Media ID'
+type: 'canonical_entities:media'
+pattern: '[media:mid]'
+selection_criteria:
+  e7f9a0c8-38ca-4dd2-a9d5-05ef83244a16:
+    id: 'entity_bundle:media'
+    bundles:
+      audio: audio
+      document: document
+      image: image
+      remote_video: remote_video
+      video: video
+    negate: false
+    context_mapping:
+      media: media
+    uuid: e7f9a0c8-38ca-4dd2-a9d5-05ef83244a16
+selection_logic: and
+weight: -5
+relationships: {  }

@@ -4,8 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.resource.body
+    - field.field.node.resource.field_link
+    - field.field.node.resource.field_location
+    - field.field.node.resource.field_resource_type
     - node.type.resource
   module:
+    - address
+    - link
     - text
     - user
 id: node.resource.default
@@ -16,13 +21,37 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 0
     settings: {  }
     third_party_settings: {  }
     region: content
-  links:
-    weight: 100
+  field_link:
+    weight: 1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_location:
+    weight: 2
+    label: above
     settings: {  }
     third_party_settings: {  }
+    type: address_default
     region: content
-hidden: {  }
+  field_resource_type:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden:
+  links: true
+  search_api_excerpt: true

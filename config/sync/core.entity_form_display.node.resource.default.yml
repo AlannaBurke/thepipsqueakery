@@ -4,8 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.resource.body
+    - field.field.node.resource.field_link
+    - field.field.node.resource.field_location
+    - field.field.node.resource.field_resource_type
     - node.type.resource
   module:
+    - address
+    - link
     - path
     - text
 id: node.resource.default
@@ -29,6 +34,30 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_link:
+    weight: 122
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_location:
+    weight: 123
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_resource_type:
+    weight: 124
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
   path:
     type: path
     weight: 30
@@ -74,4 +103,9 @@ content:
       match_limit: 10
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    settings: {  }
+    third_party_settings: {  }
+    region: content
 hidden: {  }
