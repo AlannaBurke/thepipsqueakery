@@ -6,5 +6,5 @@ id: sanctuary_member
 label: 'Sanctuary Member'
 icon_uuid: null
 icon_default: null
-description: 'an individual listing for a sanctuary animal'
+description: 'An individual listing for a sanctuary animal.'
 behavior_plugins: {  }

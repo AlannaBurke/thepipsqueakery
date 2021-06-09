@@ -20,15 +20,15 @@ mode: default
 content:
   field_animal_type:
     weight: 5
-    label: above
+    label: hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     type: entity_reference_label
     region: content
   field_date_of_birth:
     weight: 1
-    label: above
+    label: hidden
     settings:
       format_type: medium
       timezone_override: ''
@@ -37,7 +37,7 @@ content:
     region: content
   field_name:
     weight: 0
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -46,7 +46,7 @@ content:
   field_photos:
     type: entity_reference_entity_view
     weight: 3
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: false
@@ -54,7 +54,7 @@ content:
     region: content
   field_story:
     weight: 2
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
@@ -62,7 +62,7 @@ content:
   field_video:
     type: entity_reference_entity_view
     weight: 4
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: false
