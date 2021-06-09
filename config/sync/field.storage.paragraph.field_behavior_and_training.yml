@@ -1,0 +1,19 @@
+uuid: 6fce5c7a-3a27-4ca0-a998-5e1aba0cbfb0
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_behavior_and_training
+field_name: field_behavior_and_training
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

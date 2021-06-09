@@ -1,0 +1,29 @@
+uuid: 15e7d0b6-9306-4451-ab88-782e56508ce5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_photos
+    - media.type.image
+    - paragraphs.paragraphs_type.sanctuary_member
+id: paragraph.sanctuary_member.field_photos
+field_name: field_photos
+entity_type: paragraph
+bundle: sanctuary_member
+label: Photos
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: image
+field_type: entity_reference

@@ -1,0 +1,28 @@
+uuid: fcac430b-8d22-49cd-a109-2431c71d5128
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.adopt.body
+    - node.type.adopt
+  module:
+    - text
+    - user
+id: node.adopt.default
+targetEntityType: node
+bundle: adopt
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

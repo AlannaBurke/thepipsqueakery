@@ -1,0 +1,10 @@
+uuid: 78fde732-ad34-49be-9b03-74f93b31d052
+langcode: en
+status: true
+dependencies: {  }
+id: feeding
+label: Feeding
+icon_uuid: null
+icon_default: null
+description: 'All information about feeding, nutrition, and what not to feed. '
+behavior_plugins: {  }

@@ -1,0 +1,10 @@
+uuid: ab573e96-36a7-4f1c-bb63-3cee407b088f
+langcode: en
+status: true
+dependencies: {  }
+id: common_medical_issues
+label: 'Common Medical Issues'
+icon_uuid: null
+icon_default: null
+description: 'Describe any common medical issues for this type of animal. '
+behavior_plugins: {  }

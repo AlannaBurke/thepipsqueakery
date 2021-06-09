@@ -1,0 +1,21 @@
+uuid: a7a01e80-201d-44a8-8d56-1eb610dffd2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cleaning
+    - paragraphs.paragraphs_type.cleaning
+  module:
+    - text
+id: paragraph.cleaning.field_cleaning
+field_name: field_cleaning
+entity_type: paragraph
+bundle: cleaning
+label: Cleaning
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

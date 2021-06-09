@@ -1,0 +1,29 @@
+uuid: 5ec2644b-90a2-48ac-b425-bdebea79fb35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_chapter
+    - node.type.contact_info
+    - taxonomy.vocabulary.chapters
+id: node.contact_info.field_chapter
+field_name: field_chapter
+entity_type: node
+bundle: contact_info
+label: Chapter
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      chapters: chapters
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,66 @@
+uuid: 658e7b9d-e999-455e-aaac-35ecedc224e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_care_and_keeping
+    - node.type.care_and_keeping
+    - paragraphs.paragraphs_type.basic_info
+    - paragraphs.paragraphs_type.behavior_and_training
+    - paragraphs.paragraphs_type.cage_and_space_requirements
+    - paragraphs.paragraphs_type.cleaning
+    - paragraphs.paragraphs_type.common_medical_issues
+    - paragraphs.paragraphs_type.feeding
+    - paragraphs.paragraphs_type.fun_facts
+    - paragraphs.paragraphs_type.you_should_know
+  module:
+    - entity_reference_revisions
+id: node.care_and_keeping.field_care_and_keeping
+field_name: field_care_and_keeping
+entity_type: node
+bundle: care_and_keeping
+label: 'Care and Keeping'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      basic_info: basic_info
+      cage_and_space_requirements: cage_and_space_requirements
+      cleaning: cleaning
+      feeding: feeding
+      behavior_and_training: behavior_and_training
+      common_medical_issues: common_medical_issues
+      you_should_know: you_should_know
+      fun_facts: fun_facts
+    target_bundles_drag_drop:
+      basic_info:
+        enabled: true
+        weight: -17
+      behavior_and_training:
+        enabled: true
+        weight: -13
+      cage_and_space_requirements:
+        enabled: true
+        weight: -16
+      cleaning:
+        enabled: true
+        weight: -15
+      common_medical_issues:
+        enabled: true
+        weight: -12
+      feeding:
+        enabled: true
+        weight: -14
+      fun_facts:
+        enabled: true
+        weight: -10
+      you_should_know:
+        enabled: true
+        weight: -11
+field_type: entity_reference_revisions

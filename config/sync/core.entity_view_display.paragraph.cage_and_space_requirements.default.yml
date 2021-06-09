@@ -1,0 +1,32 @@
+uuid: 751cd4ed-bce0-43f4-9795-1a84ef493fc5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cage_and_space_requirements.field_cage_and_space_requirement
+    - field.field.paragraph.cage_and_space_requirements.field_image
+    - paragraphs.paragraphs_type.cage_and_space_requirements
+  module:
+    - text
+id: paragraph.cage_and_space_requirements.default
+targetEntityType: paragraph
+bundle: cage_and_space_requirements
+mode: default
+content:
+  field_cage_and_space_requirement:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_image:
+    type: entity_reference_entity_view
+    weight: 1
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+hidden: {  }

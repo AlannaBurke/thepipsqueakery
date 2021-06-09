@@ -1,0 +1,31 @@
+uuid: 06b723f4-1b66-428d-9ca5-fbffb2b00a94
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_video
+    - media.type.remote_video
+    - media.type.video
+    - paragraphs.paragraphs_type.sanctuary_member
+id: paragraph.sanctuary_member.field_video
+field_name: field_video
+entity_type: paragraph
+bundle: sanctuary_member
+label: Video
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      remote_video: remote_video
+      video: video
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: video
+field_type: entity_reference

@@ -1,0 +1,18 @@
+uuid: 9dccda05-e480-48ff-a1ce-23b08d647632
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Care and Keeping'
+type: care_and_keeping
+description: 'All information about the care and keeping of each type of animal we care for. '
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

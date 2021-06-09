@@ -1,0 +1,21 @@
+uuid: 0e04e954-ae85-4f8e-9ab9-f3deab5aea3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_common_medical_issues
+    - paragraphs.paragraphs_type.common_medical_issues
+  module:
+    - text
+id: paragraph.common_medical_issues.field_common_medical_issues
+field_name: field_common_medical_issues
+entity_type: paragraph
+bundle: common_medical_issues
+label: 'Common medical issues'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,21 @@
+uuid: 27935422-78f5-4f38-8706-047e0a3eabd1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_date_of_birth
+    - paragraphs.paragraphs_type.sanctuary_member
+  module:
+    - datetime
+id: paragraph.sanctuary_member.field_date_of_birth
+field_name: field_date_of_birth
+entity_type: paragraph
+bundle: sanctuary_member
+label: 'Date of Birth'
+description: 'We''ll calculate the animal''s age from this so we don''t have to update it. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

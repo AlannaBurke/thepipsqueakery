@@ -1,0 +1,8 @@
+uuid: 9a672a09-569e-4067-a554-3aefe57c3513
+langcode: en
+status: true
+dependencies: {  }
+name: 'Animal types'
+vid: animal_types
+description: 'Types of animals helped by the rescue'
+weight: 0

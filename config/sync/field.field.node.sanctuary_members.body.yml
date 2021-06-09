@@ -1,0 +1,23 @@
+uuid: f3fdeeff-c5d9-43e5-8fb3-524b4c84ed09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.sanctuary_members
+  module:
+    - text
+id: node.sanctuary_members.body
+field_name: body
+entity_type: node
+bundle: sanctuary_members
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

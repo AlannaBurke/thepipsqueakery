@@ -1,0 +1,19 @@
+uuid: ae0e6d83-1fd7-4679-b107-c80fb9b0975e
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_common_medical_issues
+field_name: field_common_medical_issues
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

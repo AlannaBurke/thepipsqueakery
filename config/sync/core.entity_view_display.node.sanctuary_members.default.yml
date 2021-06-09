@@ -1,0 +1,48 @@
+uuid: 43ebb905-3008-4e2b-8fbf-5494868e04a6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.sanctuary_members.body
+    - field.field.node.sanctuary_members.field_chapter
+    - field.field.node.sanctuary_members.field_sanctuary_member
+    - node.type.sanctuary_members
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.sanctuary_members.default
+targetEntityType: node
+bundle: sanctuary_members
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_chapter:
+    weight: 103
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_sanctuary_member:
+    type: entity_reference_revisions_entity_view
+    weight: 102
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

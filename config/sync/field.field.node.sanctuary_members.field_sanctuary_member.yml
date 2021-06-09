@@ -1,0 +1,55 @@
+uuid: 36d0db0b-ad15-46c3-980c-24922fcf76cf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sanctuary_member
+    - node.type.sanctuary_members
+    - paragraphs.paragraphs_type.sanctuary_member
+  module:
+    - entity_reference_revisions
+id: node.sanctuary_members.field_sanctuary_member
+field_name: field_sanctuary_member
+entity_type: node
+bundle: sanctuary_members
+label: 'Sanctuary Member'
+description: 'Add an individual sanctuary member to the page. '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      sanctuary_member: sanctuary_member
+    target_bundles_drag_drop:
+      basic_info:
+        weight: 11
+        enabled: false
+      behavior_and_training:
+        weight: 12
+        enabled: false
+      cage_and_space_requirements:
+        weight: 13
+        enabled: false
+      cleaning:
+        weight: 14
+        enabled: false
+      common_medical_issues:
+        weight: 15
+        enabled: false
+      feeding:
+        weight: 16
+        enabled: false
+      fun_facts:
+        weight: 17
+        enabled: false
+      sanctuary_member:
+        enabled: true
+        weight: 10
+      you_should_know:
+        weight: 18
+        enabled: false
+field_type: entity_reference_revisions

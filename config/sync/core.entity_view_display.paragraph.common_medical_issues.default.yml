@@ -1,0 +1,22 @@
+uuid: 0caa8651-01b1-43e3-b58f-5fc17a071840
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.common_medical_issues.field_common_medical_issues
+    - paragraphs.paragraphs_type.common_medical_issues
+  module:
+    - text
+id: paragraph.common_medical_issues.default
+targetEntityType: paragraph
+bundle: common_medical_issues
+mode: default
+content:
+  field_common_medical_issues:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

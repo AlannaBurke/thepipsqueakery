@@ -1,0 +1,25 @@
+uuid: 241c5607-c76a-47ad-a009-bd2f4256c395
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.you_should_know.field_you_should_know
+    - paragraphs.paragraphs_type.you_should_know
+  module:
+    - text
+id: paragraph.you_should_know.default
+targetEntityType: paragraph
+bundle: you_should_know
+mode: default
+content:
+  field_you_should_know:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

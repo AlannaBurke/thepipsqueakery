@@ -1,0 +1,22 @@
+uuid: cb7830c9-64ff-4e41-aac5-947187774372
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.you_should_know.field_you_should_know
+    - paragraphs.paragraphs_type.you_should_know
+  module:
+    - text
+id: paragraph.you_should_know.default
+targetEntityType: paragraph
+bundle: you_should_know
+mode: default
+content:
+  field_you_should_know:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

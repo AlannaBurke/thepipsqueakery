@@ -1,0 +1,21 @@
+uuid: 7f9a4cba-2f2d-4654-a58c-703f4ca96078
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_behavior_and_training
+    - paragraphs.paragraphs_type.behavior_and_training
+  module:
+    - text
+id: paragraph.behavior_and_training.field_behavior_and_training
+field_name: field_behavior_and_training
+entity_type: paragraph
+bundle: behavior_and_training
+label: 'Behavior and Training'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,34 @@
+uuid: 85001610-c9ef-4903-a7a3-7bf5b490c576
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sanctuary_members.body
+    - field.field.node.sanctuary_members.field_chapter
+    - field.field.node.sanctuary_members.field_sanctuary_member
+    - node.type.sanctuary_members
+  module:
+    - text
+    - user
+id: node.sanctuary_members.teaser
+targetEntityType: node
+bundle: sanctuary_members
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_chapter: true
+  field_sanctuary_member: true

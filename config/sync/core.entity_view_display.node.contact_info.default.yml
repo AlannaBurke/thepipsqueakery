@@ -1,0 +1,51 @@
+uuid: d6f8938f-13a1-4e04-aa70-433efcc03f97
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.contact_info.body
+    - field.field.node.contact_info.field_chapter
+    - field.field.node.contact_info.field_link
+    - node.type.contact_info
+  module:
+    - link
+    - text
+    - user
+id: node.contact_info.default
+targetEntityType: node
+bundle: contact_info
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_chapter:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_link:
+    weight: 103
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

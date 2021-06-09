@@ -1,0 +1,22 @@
+uuid: 703718fa-961e-4fb8-9368-0cb4ed28852c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.feeding.field_feeding
+    - paragraphs.paragraphs_type.feeding
+  module:
+    - text
+id: paragraph.feeding.default
+targetEntityType: paragraph
+bundle: feeding
+mode: default
+content:
+  field_feeding:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

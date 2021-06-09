@@ -1,0 +1,24 @@
+uuid: 41a0cce3-e0b1-4580-a34a-d5b3987bab6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.care_and_keeping.field_animal_type
+    - field.field.node.care_and_keeping.field_care_and_keeping
+    - node.type.care_and_keeping
+  module:
+    - user
+id: node.care_and_keeping.teaser
+targetEntityType: node
+bundle: care_and_keeping
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_animal_type: true
+  field_care_and_keeping: true

@@ -1,0 +1,21 @@
+uuid: 9dc56eb8-9fbf-407f-b909-4444c5ca4299
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_story
+    - paragraphs.paragraphs_type.sanctuary_member
+  module:
+    - text
+id: paragraph.sanctuary_member.field_story
+field_name: field_story
+entity_type: paragraph
+bundle: sanctuary_member
+label: Story
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

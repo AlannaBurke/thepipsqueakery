@@ -1,0 +1,29 @@
+uuid: dc84c19e-3aca-4b2e-9c4e-f1899b279dce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_chapter
+    - node.type.sanctuary_members
+    - taxonomy.vocabulary.chapters
+id: node.sanctuary_members.field_chapter
+field_name: field_chapter
+entity_type: node
+bundle: sanctuary_members
+label: Chapter
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      chapters: chapters
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

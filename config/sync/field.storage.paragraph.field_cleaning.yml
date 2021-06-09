@@ -1,0 +1,19 @@
+uuid: 01b68bf1-4812-4014-af57-acba98a26762
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_cleaning
+field_name: field_cleaning
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

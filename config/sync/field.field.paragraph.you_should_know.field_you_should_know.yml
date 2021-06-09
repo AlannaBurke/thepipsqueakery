@@ -1,0 +1,21 @@
+uuid: f528afd2-39d0-4aa0-85dc-4ae9e32508a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_you_should_know
+    - paragraphs.paragraphs_type.you_should_know
+  module:
+    - text
+id: paragraph.you_should_know.field_you_should_know
+field_name: field_you_should_know
+entity_type: paragraph
+bundle: you_should_know
+label: 'You Should Know'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

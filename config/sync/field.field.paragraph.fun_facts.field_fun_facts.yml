@@ -1,0 +1,21 @@
+uuid: 05882cb8-514a-483a-8727-18462b0cb2f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fun_facts
+    - paragraphs.paragraphs_type.fun_facts
+  module:
+    - text
+id: paragraph.fun_facts.field_fun_facts
+field_name: field_fun_facts
+entity_type: paragraph
+bundle: fun_facts
+label: 'Fun Facts'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

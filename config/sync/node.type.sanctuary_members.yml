@@ -1,0 +1,18 @@
+uuid: 6a0ddd59-ad5d-43e7-90c4-2f1b66e1fbd3
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Sanctuary Members'
+type: sanctuary_members
+description: 'Create a page to share a chapter''s sanctuary members. '
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

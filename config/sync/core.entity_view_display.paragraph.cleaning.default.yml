@@ -1,0 +1,22 @@
+uuid: aff38223-1ea9-4328-aad0-888009d0bdf2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cleaning.field_cleaning
+    - paragraphs.paragraphs_type.cleaning
+  module:
+    - text
+id: paragraph.cleaning.default
+targetEntityType: paragraph
+bundle: cleaning
+mode: default
+content:
+  field_cleaning:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

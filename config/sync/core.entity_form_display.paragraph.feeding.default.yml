@@ -1,0 +1,25 @@
+uuid: 7c1bf127-dcda-40dd-af8b-a56751102d85
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.feeding.field_feeding
+    - paragraphs.paragraphs_type.feeding
+  module:
+    - text
+id: paragraph.feeding.default
+targetEntityType: paragraph
+bundle: feeding
+mode: default
+content:
+  field_feeding:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

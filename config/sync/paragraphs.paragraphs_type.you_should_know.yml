@@ -1,0 +1,10 @@
+uuid: b856d561-4154-44bf-b171-eb1982dc7d15
+langcode: en
+status: true
+dependencies: {  }
+id: you_should_know
+label: 'You Should Know'
+icon_uuid: null
+icon_default: null
+description: 'Things pet owners should know not covered by the previous categories. '
+behavior_plugins: {  }

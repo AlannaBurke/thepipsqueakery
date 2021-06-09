@@ -1,0 +1,10 @@
+uuid: 30b152d1-88c7-46e2-ab8d-5ca8d9e1d26b
+langcode: en
+status: true
+dependencies: {  }
+id: behavior_and_training
+label: 'Behavior and Training'
+icon_uuid: null
+icon_default: null
+description: 'Information about behavior and training for this type of animal. '
+behavior_plugins: {  }

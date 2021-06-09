@@ -1,0 +1,25 @@
+uuid: 8bae2f27-3491-4149-92e7-5f91318a7d10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.fun_facts.field_fun_facts
+    - paragraphs.paragraphs_type.fun_facts
+  module:
+    - text
+id: paragraph.fun_facts.default
+targetEntityType: paragraph
+bundle: fun_facts
+mode: default
+content:
+  field_fun_facts:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

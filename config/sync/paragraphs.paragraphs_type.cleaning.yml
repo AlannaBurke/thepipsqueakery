@@ -1,0 +1,10 @@
+uuid: dba7a404-3eac-42bb-a993-4521ec1d604b
+langcode: en
+status: true
+dependencies: {  }
+id: cleaning
+label: Cleaning
+icon_uuid: null
+icon_default: null
+description: 'The cleaning instructions for this animal - what they need, what they''re sensitive to. '
+behavior_plugins: {  }

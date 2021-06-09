@@ -1,0 +1,19 @@
+uuid: fdf5bded-d152-4c3d-a019-61e8e6275a64
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_fun_facts
+field_name: field_fun_facts
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

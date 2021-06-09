@@ -1,0 +1,23 @@
+uuid: 397d5480-2cd8-4976-b88b-fc33b7c89419
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.contact_info
+  module:
+    - link
+id: node.contact_info.field_link
+field_name: field_link
+entity_type: node
+bundle: contact_info
+label: Link
+description: 'Add a donation link'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

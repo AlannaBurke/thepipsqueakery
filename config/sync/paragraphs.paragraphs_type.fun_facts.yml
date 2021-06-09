@@ -1,0 +1,10 @@
+uuid: 04f6a3e4-9e11-4747-b6d1-841e38b6aa4e
+langcode: en
+status: true
+dependencies: {  }
+id: fun_facts
+label: 'Fun Facts'
+icon_uuid: null
+icon_default: null
+description: 'Fun Facts about the animal type. '
+behavior_plugins: {  }

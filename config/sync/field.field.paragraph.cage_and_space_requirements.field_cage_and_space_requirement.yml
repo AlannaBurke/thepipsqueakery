@@ -1,0 +1,21 @@
+uuid: 02a092cc-ed77-4cc9-b51e-3233a1c1aeaf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cage_and_space_requirement
+    - paragraphs.paragraphs_type.cage_and_space_requirements
+  module:
+    - text
+id: paragraph.cage_and_space_requirements.field_cage_and_space_requirement
+field_name: field_cage_and_space_requirement
+entity_type: paragraph
+bundle: cage_and_space_requirements
+label: 'Cage and Space Requirements'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

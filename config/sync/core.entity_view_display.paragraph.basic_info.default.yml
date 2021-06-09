@@ -1,0 +1,22 @@
+uuid: f1fc81fb-7d89-44ee-a443-be3f70712d94
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.basic_info.field_basic_info
+    - paragraphs.paragraphs_type.basic_info
+  module:
+    - text
+id: paragraph.basic_info.default
+targetEntityType: paragraph
+bundle: basic_info
+mode: default
+content:
+  field_basic_info:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

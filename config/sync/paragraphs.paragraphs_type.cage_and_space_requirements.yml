@@ -1,0 +1,10 @@
+uuid: a8dec03c-f1a1-44dc-8f1f-d31943d72aac
+langcode: en
+status: true
+dependencies: {  }
+id: cage_and_space_requirements
+label: 'Cage and Space Requirements'
+icon_uuid: null
+icon_default: null
+description: 'Info about the cage and space requirements for this type of animal. '
+behavior_plugins: {  }

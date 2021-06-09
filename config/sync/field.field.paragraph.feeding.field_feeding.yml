@@ -1,0 +1,21 @@
+uuid: 696d497a-3584-4d12-8f2d-ac315cc0de97
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_feeding
+    - paragraphs.paragraphs_type.feeding
+  module:
+    - text
+id: paragraph.feeding.field_feeding
+field_name: field_feeding
+entity_type: paragraph
+bundle: feeding
+label: Feeding
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

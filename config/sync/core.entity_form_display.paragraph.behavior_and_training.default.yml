@@ -1,0 +1,25 @@
+uuid: 6e2d0fa1-f1a4-44f1-b022-c623b1bf109c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.behavior_and_training.field_behavior_and_training
+    - paragraphs.paragraphs_type.behavior_and_training
+  module:
+    - text
+id: paragraph.behavior_and_training.default
+targetEntityType: paragraph
+bundle: behavior_and_training
+mode: default
+content:
+  field_behavior_and_training:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true

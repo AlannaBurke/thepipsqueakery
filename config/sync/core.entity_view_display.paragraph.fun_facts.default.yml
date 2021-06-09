@@ -1,0 +1,22 @@
+uuid: 3a080018-da6a-4d7b-a3fc-2c933764da4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.fun_facts.field_fun_facts
+    - paragraphs.paragraphs_type.fun_facts
+  module:
+    - text
+id: paragraph.fun_facts.default
+targetEntityType: paragraph
+bundle: fun_facts
+mode: default
+content:
+  field_fun_facts:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

@@ -1,0 +1,39 @@
+uuid: f4e9bc8c-2e0c-4801-b139-363fe37e8d84
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.care_and_keeping.field_animal_type
+    - field.field.node.care_and_keeping.field_care_and_keeping
+    - node.type.care_and_keeping
+  module:
+    - entity_reference_revisions
+    - user
+id: node.care_and_keeping.default
+targetEntityType: node
+bundle: care_and_keeping
+mode: default
+content:
+  field_animal_type:
+    weight: 103
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_care_and_keeping:
+    type: entity_reference_revisions_entity_view
+    weight: 102
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

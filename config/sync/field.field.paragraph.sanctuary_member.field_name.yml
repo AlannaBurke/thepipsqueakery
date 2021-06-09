@@ -1,0 +1,19 @@
+uuid: b7855846-8598-47c3-ba53-c75bf9bf8325
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_name
+    - paragraphs.paragraphs_type.sanctuary_member
+id: paragraph.sanctuary_member.field_name
+field_name: field_name
+entity_type: paragraph
+bundle: sanctuary_member
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

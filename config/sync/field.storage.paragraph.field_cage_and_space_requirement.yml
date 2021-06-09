@@ -1,0 +1,19 @@
+uuid: 7543fd8a-dbc1-4ee7-9976-167fc93dda62
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_cage_and_space_requirement
+field_name: field_cage_and_space_requirement
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

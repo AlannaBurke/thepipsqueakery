@@ -1,0 +1,10 @@
+uuid: 80513b05-9ad5-4c93-bc81-a9dbb6a2c7c9
+langcode: en
+status: true
+dependencies: {  }
+id: basic_info
+label: 'Basic Info'
+icon_uuid: null
+icon_default: null
+description: 'Basic info about the animal type - its size, life expectancy, etc.'
+behavior_plugins: {  }
