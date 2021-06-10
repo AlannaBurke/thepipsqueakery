@@ -3,7 +3,7 @@
 /drush/Commands/contrib/
 /drush/sites/lagoon.site.yml
 /vendor/
-/web
+
 
 # Ignore Drupal's file directory
 /web/sites/*/files/
