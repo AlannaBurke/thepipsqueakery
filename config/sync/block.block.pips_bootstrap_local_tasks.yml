@@ -1,0 +1,22 @@
+uuid: 7f50be44-03e6-41ff-87fc-22a628e8b23e
+langcode: en
+status: true
+dependencies:
+  theme:
+    - pips_bootstrap
+_core:
+  default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
+id: pips_bootstrap_local_tasks
+theme: pips_bootstrap
+region: header
+weight: 10
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

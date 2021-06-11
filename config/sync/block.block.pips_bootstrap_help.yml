@@ -1,0 +1,22 @@
+uuid: daffaf5a-939b-4bb7-b925-82c886c83193
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - pips_bootstrap
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: pips_bootstrap_help
+theme: pips_bootstrap
+region: help
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

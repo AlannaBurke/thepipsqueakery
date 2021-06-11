@@ -1,17 +1,16 @@
-uuid: 3d2cf2c9-e6f5-4918-8580-36248fe75685
+uuid: 7146a0c3-b739-453b-b5e0-b88036319a19
 langcode: en
 status: true
 dependencies:
   module:
+    - address
     - node
-    - taxonomy
-id: node.field_animal_type
-field_name: field_animal_type
+id: node.field_vet_address
+field_name: field_vet_address
 entity_type: node
-type: entity_reference
-settings:
-  target_type: taxonomy_term
-module: core
+type: address
+settings: {  }
+module: address
 locked: false
 cardinality: -1
 translatable: true

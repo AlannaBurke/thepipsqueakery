@@ -1,0 +1,29 @@
+uuid: 750f7e17-cea9-464b-9951-16687ac8e265
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_animal_type
+    - node.type.resource
+    - taxonomy.vocabulary.animal_types
+id: node.resource.field_animal_type
+field_name: field_animal_type
+entity_type: node
+bundle: resource
+label: 'Animal Type'
+description: 'If the resource is related to an animal type, specify it here. '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      animal_types: animal_types
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

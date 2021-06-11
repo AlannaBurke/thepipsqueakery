@@ -1,0 +1,22 @@
+uuid: b9db1411-9b95-41d3-8eb8-fc7b685b8447
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.vet_or_clinic
+id: node.vet_or_clinic.promote
+field_name: promote
+entity_type: node
+bundle: vet_or_clinic
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

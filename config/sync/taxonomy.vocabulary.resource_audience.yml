@@ -1,0 +1,8 @@
+uuid: 8ccb85fb-098a-418e-926d-1ddf852e817e
+langcode: en
+status: true
+dependencies: {  }
+name: 'Resource Audience'
+vid: resource_audience
+description: 'Who this resource is for. '
+weight: 0

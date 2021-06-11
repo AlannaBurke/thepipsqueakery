@@ -1,12 +1,12 @@
-uuid: 3d2cf2c9-e6f5-4918-8580-36248fe75685
+uuid: 33ee641f-d1e1-4137-91f8-2f011db2e14d
 langcode: en
 status: true
 dependencies:
   module:
     - node
     - taxonomy
-id: node.field_animal_type
-field_name: field_animal_type
+id: node.field_resource_audience
+field_name: field_resource_audience
 entity_type: node
 type: entity_reference
 settings:

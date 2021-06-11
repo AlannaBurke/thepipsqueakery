@@ -1,0 +1,23 @@
+uuid: 35108111-fab6-4b90-9917-25c5928efecd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.vet_or_clinic
+  module:
+    - link
+id: node.vet_or_clinic.field_link
+field_name: field_link
+entity_type: node
+bundle: vet_or_clinic
+label: Link
+description: 'Add any contact links for the vet or clinic here - website, social media, etc. '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

@@ -1,0 +1,35 @@
+uuid: 0f552f6d-cf11-48a8-8e9e-7e38fd71aa76
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.vet_or_clinic.body
+    - field.field.node.vet_or_clinic.field_link
+    - field.field.node.vet_or_clinic.field_vet_address
+    - node.type.vet_or_clinic
+  module:
+    - text
+    - user
+id: node.vet_or_clinic.teaser
+targetEntityType: node
+bundle: vet_or_clinic
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_link: true
+  field_vet_address: true
+  search_api_excerpt: true

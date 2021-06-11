@@ -1,0 +1,18 @@
+uuid: bb0a2c3f-de0b-4faf-8668-c047e1e19864
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Vet or Clinic'
+type: vet_or_clinic
+description: 'Add a vet or clinic that treats small animals. '
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,23 +1,20 @@
-uuid: 8dcf19d1-2215-4be9-8bfe-37850e90484a
+uuid: b54e9bcf-67be-43f8-ae58-aae938d30781
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.resource.body
-    - field.field.node.resource.field_animal_type
-    - field.field.node.resource.field_link
-    - field.field.node.resource.field_location
-    - field.field.node.resource.field_resource_audience
-    - field.field.node.resource.field_resource_type
-    - node.type.resource
+    - field.field.node.vet_or_clinic.body
+    - field.field.node.vet_or_clinic.field_link
+    - field.field.node.vet_or_clinic.field_vet_address
+    - node.type.vet_or_clinic
   module:
     - address
     - link
     - path
     - text
-id: node.resource.default
+id: node.vet_or_clinic.default
 targetEntityType: node
-bundle: resource
+bundle: vet_or_clinic
 mode: default
 content:
   body:
@@ -36,49 +33,19 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_animal_type:
-    weight: 125
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_link:
-    weight: 122
+    weight: 123
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
     region: content
-  field_location:
-    weight: 123
+  field_vet_address:
+    weight: 122
     settings: {  }
     third_party_settings: {  }
     type: address_default
-    region: content
-  field_resource_audience:
-    weight: 126
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
-  field_resource_type:
-    weight: 124
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
     region: content
   path:
     type: path

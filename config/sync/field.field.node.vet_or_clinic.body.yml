@@ -1,0 +1,23 @@
+uuid: 78137908-f7a1-4add-93ef-19cb572dee68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.vet_or_clinic
+  module:
+    - text
+id: node.vet_or_clinic.body
+field_name: body
+entity_type: node
+bundle: vet_or_clinic
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,52 @@
+uuid: 60c9dc5e-d5af-4e02-8f48-af4f7693bb55
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.vet_or_clinic.body
+    - field.field.node.vet_or_clinic.field_link
+    - field.field.node.vet_or_clinic.field_vet_address
+    - node.type.vet_or_clinic
+  module:
+    - address
+    - link
+    - text
+    - user
+id: node.vet_or_clinic.default
+targetEntityType: node
+bundle: vet_or_clinic
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_link:
+    weight: 103
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_vet_address:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  search_api_excerpt: true
